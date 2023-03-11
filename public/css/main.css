@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+body {
+  background-color: hsl(226deg, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+}
+body .container .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 3fr;
+  grid-template-columns: 1fr 3fr;
+  height: 500px;
+  margin-top: 7%;
+  grid-gap: 20px;
+}
+body .container .grid-container .OrgSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+body .container .grid-container .OrgSection div {
+  position: relative;
+  border-radius: 15px 15px 50px 50px;
+}
+body .container .grid-container .OrgSection div.Work {
+  background-color: hsl(15deg, 100%, 70%);
+}
+body .container .grid-container .OrgSection div.Play {
+  background-color: hsl(195deg, 74%, 62%);
+}
+body .container .grid-container .OrgSection div.Study {
+  background-color: hsl(348deg, 100%, 68%);
+}
+body .container .grid-container .OrgSection div.Exercise {
+  background-color: hsl(145deg, 58%, 55%);
+}
+body .container .grid-container .OrgSection div.Social {
+  background-color: hsl(264deg, 64%, 52%);
+}
+body .container .grid-container .OrgSection div.SelfCare {
+  background-color: hsl(43deg, 84%, 65%);
+}
+body .container .grid-container .OrgSection div > img {
+  position: absolute;
+  right: 20px;
+}
+body .container .grid-container .OrgSection div .innerSection {
+  background-color: hsl(235deg, 46%, 20%);
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  border-radius: 15px;
+}
+body .container .grid-container .OrgSection div .innerSection div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container .grid-container .OrgSection div .innerSection div svg {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+body .container .grid-container .OrgSection div .innerSection div svg:hover {
+  -webkit-filter: brightness(1000);
+          filter: brightness(1000);
+}
+body .container .grid-container .OrgSection div .innerSection h2 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+body .container .grid-container .OrgSection div .innerSection p {
+  color: hsl(236deg, 100%, 87%);
+  margin-top: 5px;
+}
+body .container .grid-container .profileSection {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 15px;
+}
+body .container .grid-container .profileSection .ProfileNameAndPhoto {
+  background-color: hsl(246deg, 80%, 60%);
+  height: 70%;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+body .container .grid-container .profileSection .ProfileNameAndPhoto img {
+  width: 75px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+body .container .grid-container .profileSection .ProfileNameAndPhoto span {
+  display: block;
+}
+body .container .grid-container .profileSection .ProfileNameAndPhoto h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+body .container .grid-container .profileSection .ProfileDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 30%;
+  margin-left: 20px;
+}
+body .container .grid-container .profileSection .ProfileDate a {
+  text-decoration: none;
+  color: hsl(236deg, 100%, 87%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+body .container .grid-container .profileSection .ProfileDate a:hover {
+  color: white;
+}
